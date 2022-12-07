@@ -66,6 +66,9 @@ const Prices = styled.div`
   padding: 0 20px;
   justify-content: space-evenly;
   align-items: center;
+  @media (max-width: 512px) {
+    width: 100%;
+  }
 `
 
 const HostelImage = styled.img`
