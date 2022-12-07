@@ -4,7 +4,6 @@ const Hostel = ({name, location}) => {
     return <Whole>
         <div>
             <HostelImage src={"https://images.unsplash.com/photo-1670272505497-d532f0b50702?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"} alt="ghghg"/>
-
         </div>
         <Name>
             <h1>
@@ -30,6 +29,7 @@ const Whole = styled.div`
   color: white;
   border-radius: 30px;
   width: 40%;
+  min-width: 400px;
   height: 40vh;
   margin: 30px 50px;
   padding: 10px;
