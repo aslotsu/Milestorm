@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 const Hostel = ({name, location}) => {
-    return <Whole>
+
+    return <Whole >
         <div  style={{display: "flex", justifyContent: "center", alignItems: "center", padding: "20px 0 0 0"}}>
-            <HostelImage src={"https://images.unsplash.com/photo-1670272505497-d532f0b50702?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"} alt="ghghg"/>
+            <HostelImage  src={"https://images.unsplash.com/photo-1670272505497-d532f0b50702?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"} alt="ghghg"/>
         </div>
         <Name>
             <h1>
@@ -36,6 +37,10 @@ const Whole = styled.div`
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
+   &:hover {
+     scale: 1.2;
+   }
+  transition: all 0.25s ease;
 `
 
 const Bottom = styled.div`
