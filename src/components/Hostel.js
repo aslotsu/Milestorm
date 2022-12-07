@@ -31,6 +31,7 @@ const Whole = styled.div`
   width: 40%;
   min-width: 300px;
   height: 40vh;
+  min-height: 384px;
   margin: 30px 50px;
   display: flex;
   flex-flow: column nowrap;
