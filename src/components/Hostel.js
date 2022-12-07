@@ -67,7 +67,7 @@ const Prices = styled.div`
 
 const HostelImage = styled.img`
   object-fit: cover;
-  width: 700px;
+  width: 80%;
   height: 200px;
 `
 
