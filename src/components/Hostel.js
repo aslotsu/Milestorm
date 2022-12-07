@@ -37,7 +37,7 @@ const Whole = styled.div`
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-   &:hover {
+   &:hover, :active {
      scale: 1.2;
    }
   transition: all 0.25s ease;
