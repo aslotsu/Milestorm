@@ -18,6 +18,7 @@ const Cover = styled.div`
 const Place = styled.input`
   outline: 0;
   width: 20vw;
+  min-width: 300px;
   padding: 3px 15px;
   border: 0;
   &:focus {
