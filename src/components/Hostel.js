@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Hostel = ({name, location}) => {
     return <Whole>
-        <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+        <div  style={{display: "flex", justifyContent: "center", alignItems: "center", padding: "20px 0 0 0"}}>
             <HostelImage src={"https://images.unsplash.com/photo-1670272505497-d532f0b50702?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"} alt="ghghg"/>
         </div>
         <Name>
@@ -32,7 +32,6 @@ const Whole = styled.div`
   min-width: 400px;
   height: 40vh;
   margin: 30px 50px;
-  padding: 10px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -57,10 +56,10 @@ const Name = styled.div`
    text-align: center;
  }`
 const Prices = styled.div`
-  width: 40%;
+  width: 60%;
   //border: 2px solid green;
   display: flex;
-  padding: 10px 0;
+  padding: 0 20px;
   justify-content: space-evenly;
   align-items: center;
 `
