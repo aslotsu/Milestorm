@@ -57,6 +57,7 @@ const Bottom = styled.div`
 
 const Name = styled.div`
  & h1 {
+   margin-top: 8px;
    text-align: center;
  }`
 const Prices = styled.div`
