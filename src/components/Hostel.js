@@ -29,7 +29,7 @@ const Whole = styled.div`
   color: white;
   border-radius: 30px;
   width: 40%;
-  min-width: 400px;
+  min-width: 300px;
   height: 40vh;
   margin: 30px 50px;
   display: flex;
