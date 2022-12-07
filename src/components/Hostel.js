@@ -49,6 +49,10 @@ const Bottom = styled.div`
    & span.location {
      font-size: 2rem;
    }
+  
+  @media (max-width: 512px) {
+    flex-direction: column;
+  }
   `
 
 const Name = styled.div`
