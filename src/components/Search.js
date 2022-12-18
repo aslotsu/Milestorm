@@ -1,8 +1,22 @@
 import styled from "styled-components";
+import {useState} from "react";
 
-const Search = () => {
+const Search = ({hostels, filterProp}) => {
+
+    const [searchTerm, setSearchTerm] = useState('')
+
+    const filterHostels = () => {
+        console.log(hostels);
+        const b = hostels.filter(hostel => hostel.name === searchTerm)
+        console.log(b)
+        filterProp(b)
+
+
+    }
+
     return <Cover>
-        <Place type="search" name="hostel-search" id="hostel-search" placeholder={"Search for Hostels"}/>
+        <Place type="search" name="hostel-search" id="hostel-search" placeholder={"Search for Hostels"} value={searchTerm} onChange={(event)=> setSearchTerm(event.target.value)}/>
+        <button onClick={filterHostels}>Search</button>
     </Cover>
 }
 
@@ -19,7 +33,7 @@ const Place = styled.input`
   outline: 0;
   width: 20vw;
   min-width: 300px;
-  padding: 3px 15px;
+  padding: 3px ;
   border: 0;
   &:focus {
     //border: 2px palegoldenrod;
